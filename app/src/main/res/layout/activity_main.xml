@@ -5,7 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:theme="@style/myStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/myStyle"
+                android:text="@string/medic_ai" />
+        </androidx.appcompat.widget.Toolbar>
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/mainAnim"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            app:lottie_fileName="medicalbed.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false" />
+    </LinearLayout>
 
 </RelativeLayout>

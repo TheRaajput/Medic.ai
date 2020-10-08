@@ -2,8 +2,12 @@ package com.yasharth.medicai;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
@@ -16,13 +20,13 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        LottieAnimationView splashAnim = findViewById(R.id.AnimSplash);
+
+//        Variables
         TextView companyName = findViewById(R.id.CompanyName);
         TextView tagLine = findViewById(R.id.TagLine);
 
+//        Animation
         Animation frontAnim = AnimationUtils.loadAnimation(this,R.anim.myanim);
-
-        splashAnim.startAnimation(frontAnim);
         companyName.startAnimation(frontAnim);
         tagLine.startAnimation(frontAnim);
 
@@ -31,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
         {
             public void run (){
                 try {
-                    sleep(6500);
+                    sleep(4000);
                 }
                 catch (InterruptedException e){
                     e.printStackTrace();
