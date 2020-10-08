@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Medic.ai</string>
+    <string name="diagnosis_at_your_doorstep">Diagnosis at your doorstep</string>
+    <string name="medic_ai">Medic.ai</string>
 </resources>
