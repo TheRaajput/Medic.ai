@@ -11,4 +11,5 @@
         <item name="android:fontFamily">@font/aclonica</item>
         <item name="android:textSize">28sp</item>
     </style>
+
 </resources>

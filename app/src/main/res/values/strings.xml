@@ -2,4 +2,11 @@
     <string name="app_name">Medic.ai</string>
     <string name="diagnosis_at_your_doorstep">Diagnosis at your doorstep</string>
     <string name="medic_ai">Medic.ai</string>
+    <string name="stay_fit_stay_positive">Stay fit, Stay positive</string>
+    <string name="what_do_you_want_us_to_diagnose">What do you want us to diagnose?</string>
+    <string name="eye">Eye</string>
+    <string name="lungs">Lungs</string>
+    <string name="heart">Heart</string>
+    <string name="skin">Skin</string>
+    <string name="health_tips">Health Tips</string>
 </resources>

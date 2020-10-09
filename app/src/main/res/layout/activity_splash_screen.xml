@@ -23,12 +23,12 @@
             android:text="@string/medic_ai"
             android:textAlignment="center"
             android:textColor="@android:color/background_dark"
-            android:textSize="36sp" />
+            android:textSize="40sp" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/AnimSplash"
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="400dp"
             app:lottie_autoPlay="true"
             app:lottie_fileName="medsplash.json"
             app:lottie_loop="false" />
@@ -37,7 +37,7 @@
             android:id="@+id/TagLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="22dp"
             android:fontFamily="@font/aclonica"
             android:text="@string/diagnosis_at_your_doorstep"
             android:textAlignment="center"

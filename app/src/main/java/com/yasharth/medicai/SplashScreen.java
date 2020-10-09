@@ -21,6 +21,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
+
 //        Variables
         TextView companyName = findViewById(R.id.CompanyName);
         TextView tagLine = findViewById(R.id.TagLine);
@@ -48,5 +49,13 @@ public class SplashScreen extends AppCompatActivity {
         };
         time.start();
 
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
     }
 }
