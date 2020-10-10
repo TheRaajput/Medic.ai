@@ -9,4 +9,22 @@
     <string name="heart">Heart</string>
     <string name="skin">Skin</string>
     <string name="health_tips">Health Tips</string>
+    <string name="heart_care">Welcome to Heart Diagnostic Centre</string>
+    <string name="please_enter_your_age">Please enter your age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_your_blood_pressure">Enter your blood pressure</string>
+    <string name="enter_cholestrol_level">Enter Cholestrol level</string>
+    <string name="blood_sugar_120_mg_dl"><![CDATA[Blood Sugar > 120 mg/dl ?]]></string>
+    <string name="chest_pain_type">Chest Pain type</string>
+    <string name="asymptomatic">Asymptomatic</string>
+    <string name="non_anginal_pain">Non-Anginal Pain</string>
+    <string name="atypical_angina">Atypical Angina</string>
+    <string name="typical_angina">Typical Angina</string>
+    <string name="lv_hypertrophy">LV Hypertrophy</string>
+    <string name="st_t_abnormality">ST-T Abnormality</string>
+    <string name="normal">Normal</string>
+    <string name="chest_pain_due_to_exercise">Chest pain due to exercise?</string>
 </resources>
