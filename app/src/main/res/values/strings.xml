@@ -25,6 +25,22 @@
     <string name="typical_angina">Typical Angina</string>
     <string name="lv_hypertrophy">LV Hypertrophy</string>
     <string name="st_t_abnormality">ST-T Abnormality</string>
-    <string name="normal">Normal</string>
+    <string name="normal_thal">Normal</string>
     <string name="chest_pain_due_to_exercise">Chest pain due to exercise?</string>
+    <string name="st_depression_caused_by_exercise">ST depression caused by exercise</string>
+    <string name="slope_of_peak_exercise_st_segment">Slope of peak exercise ST segment</string>
+    <string name="diagnosis_results">Diagnosis Results:</string>
+    <string name="major_vessel_0_3">Major Vessel(0-3)</string>
+    <string name="chances_of_heart_problem">Chances of heart problem:</string>
+    <string name="_0">0</string>
+    <string name="downsloping">Downsloping</string>
+    <string name="flat">Flat</string>
+    <string name="unsloping">Upsloping</string>
+    <string name="begin_diagnosis">Begin Diagnosis</string>
+    <string name="thalassmia_score">Thalassmia Score</string>
+    <string name="nan">Nan</string>
+    <string name="normal">Normal</string>
+    <string name="fixed_defect">Fixed Defect</string>
+    <string name="reversal_defect">Reversal Defect</string>
+    <string name="ecg_report">ECG Report</string>
 </resources>

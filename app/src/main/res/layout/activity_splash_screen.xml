@@ -18,26 +18,36 @@
             android:id="@+id/CompanyName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             android:fontFamily="@font/aclonica"
             android:text="@string/medic_ai"
             android:textAlignment="center"
             android:textColor="@android:color/background_dark"
             android:textSize="40sp" />
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/AnimSplash"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            app:lottie_autoPlay="true"
-            app:lottie_fileName="medsplash.json"
-            app:lottie_loop="false" />
+            android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/AnimSplash"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="logo_bg.json"
+                app:lottie_loop="false" />
+
+            <ImageView
+                android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/medic_logo"/>
+        </FrameLayout>
 
         <TextView
             android:id="@+id/TagLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/aclonica"
             android:text="@string/diagnosis_at_your_doorstep"
             android:textAlignment="center"
