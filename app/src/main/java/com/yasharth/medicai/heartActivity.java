@@ -1,23 +1,18 @@
 package com.yasharth.medicai;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import java.lang.Object;
-import android.content.res.AssetManager;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-
-import org.tensorflow.lite.Interpreter;
-
-import java.io.File;
-import java.nio.MappedByteBuffer;
 
 public class heartActivity extends AppCompatActivity {
 
@@ -28,24 +23,24 @@ public class heartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heart);
-        Button predictButton = findViewById(R.id.predictBtn);
+        final Button predictButton = findViewById(R.id.predictBtn);
 
-        TextView predicted_result = findViewById(R.id.predictedScore);
+        final TextView predicted_result = findViewById(R.id.predictedScore);
 
-        EditText age = findViewById(R.id.Age);
-        EditText bloodPressure = findViewById(R.id.bloodPressure);
-        EditText cholestrol = findViewById(R.id.EnterCholestrol);
-        EditText maxHeartRate = findViewById(R.id.MaxHeartRate);
-        EditText stDepression = findViewById(R.id.StDepression);
-        EditText majorVessel = findViewById(R.id.majorVessel);
+        final EditText age = findViewById(R.id.Age);
+        final EditText bloodPressure = findViewById(R.id.bloodPressure);
+        final EditText cholestrol = findViewById(R.id.EnterCholestrol);
+        final EditText maxHeartRate = findViewById(R.id.MaxHeartRate);
+        final EditText stDepression = findViewById(R.id.StDepression);
+        final EditText majorVessel = findViewById(R.id.majorVessel);
 
-        RadioGroup sex = findViewById(R.id.sex);
-        RadioGroup chestPainType = findViewById(R.id.chestPainType);
-        RadioGroup bloodSugar = findViewById(R.id.bloodSugar);
-        RadioGroup ecgReport = findViewById(R.id.ecgReport);
-        RadioGroup exercisePain = findViewById(R.id.exercisePain);
-        RadioGroup slopePeak = findViewById(R.id.slopePeak);
-        RadioGroup thalSlope = findViewById(R.id.thalSlope);
+        final RadioGroup sex = findViewById(R.id.sex);
+        final RadioGroup chestPainType = findViewById(R.id.chestPainType);
+        final RadioGroup bloodSugar = findViewById(R.id.bloodSugar);
+        final RadioGroup ecgReport = findViewById(R.id.ecgReport);
+        final RadioGroup exercisePain = findViewById(R.id.exercisePain);
+        final RadioGroup slopePeak = findViewById(R.id.slopePeak);
+        final RadioGroup thalSlope = findViewById(R.id.thalSlope);
 
 
 
@@ -59,9 +54,47 @@ public class heartActivity extends AppCompatActivity {
             public void onClick(View view) {
                 bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HALF_EXPANDED);
 
+                float PatientAge = Float.parseFloat(age.getText().toString()); //Patient Age Details
+
+                float PatientBP = Float.parseFloat(bloodPressure.getText().toString()); //Patient Blood Pressure
+
+                float PatientChol = Float.parseFloat(cholestrol.getText().toString()); //Patient's Cholestrol Details
+
+                float PatientMaxHeart = Float.parseFloat(maxHeartRate.getText().toString()); // Patient's Max Heart Rate
+
+                float PatientStDep = Float.parseFloat(stDepression.getText().toString()); // St depression value
+
+                float PatientMVessel = Float.parseFloat(majorVessel.getText().toString()); //Flouroscopy major Vessel
+
+                int selectedID = sex.getCheckedRadioButtonId();
+                RadioButton radioSexButton = findViewById(selectedID);
+                float PatientGender = Float.parseFloat(radioSexButton.getTag().toString()); // Patient's gender
+
+                int selectedID2 = chestPainType.getCheckedRadioButtonId();
+                RadioButton radioChestPain = findViewById(selectedID2);
+                float chestPainType = Float.parseFloat(radioChestPain.getTag().toString()); // Chest Pain Type
+
+                int selectedID3 = bloodSugar.getCheckedRadioButtonId();
+                RadioButton radioBloodSugar = findViewById(selectedID3);
+                float bloodSugarLevel = Float.parseFloat(radioBloodSugar.getTag().toString()); // Blood sugar> 120mg/dl?
+
+                int selectedID4 = ecgReport.getCheckedRadioButtonId();
+                RadioButton radioECG = findViewById(selectedID4);
+                float PatientECGReport = Float.parseFloat(radioECG.getTag().toString()); // ECG report
+
+                int selectedID5 = exercisePain.getCheckedRadioButtonId();
+                RadioButton radioPain = findViewById(selectedID5);
+                float PatientChestPain = Float.parseFloat(radioPain.getTag().toString());// exercise Induced pain
+
+                int selectedID6 = slopePeak.getCheckedRadioButtonId();
+                RadioButton radioPeak = findViewById(selectedID6);
+                float PatientSlopePeak = Float.parseFloat(radioPeak.getTag().toString()); // slope of ST depression
+
+                int selectedID7 = thalSlope.getCheckedRadioButtonId();
+                RadioButton radioThal = findViewById(selectedID7);
+                float PatientThalSlope = Float.parseFloat(radioThal.getTag().toString()); // Thalassmia Slope
             }
         });
 
     }
-    
 }

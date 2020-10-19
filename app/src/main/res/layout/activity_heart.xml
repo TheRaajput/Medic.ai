@@ -58,6 +58,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/male"
+                        android:tag="1"
                         android:fontFamily="@font/aclonica"
                         android:checked="false"/>
                     <RadioButton
@@ -65,6 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/female"
+                        android:tag="0"
                         android:checked="false"
                         android:fontFamily="@font/aclonica"/>
                 </RadioGroup>
@@ -87,21 +89,25 @@
                         android:id="@+id/typicalAngina"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/typical_angina"/>
+                        android:text="@string/typical_angina"
+                        android:tag="0"/>
                     <RadioButton
                         android:id="@+id/atypicalAngina"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="1"
                         android:text="@string/atypical_angina"/>
                     <RadioButton
                         android:id="@+id/nonAngina"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="2"
                         android:text="@string/non_anginal_pain"/>
                     <RadioButton
                         android:id="@+id/aSymptomatic"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="3"
                         android:text="@string/asymptomatic"/>
                 </RadioGroup>
                 <EditText
@@ -145,10 +151,12 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="1"
                         android:text="@string/yes"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="0"
                         android:text="@string/no"/>
                 </RadioGroup>
 
@@ -171,16 +179,19 @@
                         android:id="@+id/normalReport"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="0"
                         android:text="@string/normal"/>
                     <RadioButton
                         android:id="@+id/stAbnormality"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="1"
                         android:text="@string/st_t_abnormality"/>
                     <RadioButton
                         android:id="@+id/lvHypertrophy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="2"
                         android:text="@string/lv_hypertrophy"/>
                 </RadioGroup>
 
@@ -215,11 +226,13 @@
                         android:id="@+id/painYes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="1"
                         android:text="@string/yes"/>
                     <RadioButton
                         android:id="@+id/painNo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="0"
                         android:text="@string/no"/>
                 </RadioGroup>
 
@@ -253,16 +266,19 @@
                         android:id="@+id/peakUpslope"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="0"
                         android:text="@string/unsloping"/>
                     <RadioButton
                         android:id="@+id/slopeFlat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="1"
                         android:text="@string/flat"/>
                     <RadioButton
                         android:id="@+id/slopeDown"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="2"
                         android:text="@string/downsloping"/>
                 </RadioGroup>
 
@@ -297,21 +313,25 @@
                         android:id="@+id/NanScore"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="0"
                         android:text="@string/nan"/>
                     <RadioButton
                         android:id="@+id/normalScore"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="1"
                         android:text="@string/normal"/>
                     <RadioButton
                         android:id="@+id/fixedDefect"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="2"
                         android:text="@string/fixed_defect"/>
                     <RadioButton
                         android:id="@+id/reversalDefect"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:tag="3"
                         android:text="@string/reversal_defect"/>
                 </RadioGroup>
 
