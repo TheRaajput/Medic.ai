@@ -125,9 +125,18 @@ public class heartActivity extends AppCompatActivity {
 
                 float[][] input = new float[][]{{PatientAge,PatientGender,chestPainType,PatientBP,PatientChol,bloodSugarLevel,PatientECGReport,
                         PatientMaxHeart,PatientChestPain,PatientStDep,PatientSlopePeak,PatientMVessel,PatientThalSlope}};
-                float[][] out=new float[][]{{0}};
+                float[][] out = new float[][]{{0}};
                 interpreter.run(input,out);
-                predicted_result.setText("Chances are: "+(out[0][0])*100+"%");
+
+                if (out[0][0]>0.4)
+                {
+                    predicted_result.setText("Chances are: " + (out[0][0])*100 + "%");
+                }
+                else
+                {
+                    predicted_result.setText("You are Safe. Don't worry. Chnces are: "+(out[0][0])*100 + "%");
+                }
+
             }
         });
 
