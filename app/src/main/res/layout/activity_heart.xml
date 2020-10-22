@@ -13,7 +13,7 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FF362E">
+            android:background="#F3CC79">
 
             <TextView
                 android:layout_width="match_parent"
@@ -199,7 +199,7 @@
                     android:id="@+id/MaxHeartRate"
                     android:layout_margin="10dp"
                     android:inputType="number"
-                    android:hint="Enter Max Heart Rate"
+                    android:hint="@string/enter_max_heart_rate"
                     android:textAlignment="center"
                     android:fontFamily="@font/aclonica"
                     android:textColor="@android:color/black"

@@ -43,4 +43,5 @@
     <string name="fixed_defect">Fixed Defect</string>
     <string name="reversal_defect">Reversal Defect</string>
     <string name="ecg_report">ECG Report</string>
+    <string name="enter_max_heart_rate">Enter Max Heart Rate</string>
 </resources>

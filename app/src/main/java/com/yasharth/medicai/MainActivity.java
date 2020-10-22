@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         CardView heartCard = findViewById(R.id.heartDiag);
-//        CardView lungCard = findViewById(R.id.lungDiag);
+        CardView lungCard = findViewById(R.id.lungDiag);
 //        CardView eyeCard = findViewById(R.id.eyeDiag);
 //        CardView healthTip = findViewById(R.id.healthTip);
 
@@ -24,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent toHeart = new Intent(MainActivity.this,heartActivity.class);
                 startActivity(toHeart);
+            }
+        });
+        lungCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toLung = new Intent(MainActivity.this,lung_activity.class);
+                startActivity(toLung);
             }
         });
     }
