@@ -42,11 +42,12 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/predHead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/aclonica"
-        android:text="@string/chances_of_heart_problem"
+        android:text="@string/prediction"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp" />

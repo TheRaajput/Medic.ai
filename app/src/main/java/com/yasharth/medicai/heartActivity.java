@@ -38,7 +38,7 @@ public class heartActivity extends AppCompatActivity {
         final Button predictButton = findViewById(R.id.predictBtn);
         final TextView predictedText = findViewById(R.id.predictedText);
         final TextView predicted_result = findViewById(R.id.predictedScore);
-
+        final TextView predictHead = findViewById(R.id.predHead);
 
 
         final EditText age = findViewById(R.id.Age);
@@ -134,6 +134,7 @@ public class heartActivity extends AppCompatActivity {
                         predictedText.setText("You are safe.But do workout");
                         predictedText.setTextColor(Color.parseColor("#43BE31"));
                     }
+                    predictHead.setText("Chances of heart failure:");
                     pulseAnimation(predictedText);
                     predicted_result.setText((out[0][0])*100 + "%");
                 }

@@ -160,7 +160,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/healthTip"
+                        android:id="@+id/brainDiagnosis"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_row="1"
@@ -181,13 +181,13 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/medic_logo" />
+                                android:background="@drawable/brainstorm" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/aclonica"
-                                android:text="@string/health_tips"
+                                android:text="@string/brain"
                                 android:textAlignment="center"
                                 android:textColor="@android:color/black" />
                         </LinearLayout>

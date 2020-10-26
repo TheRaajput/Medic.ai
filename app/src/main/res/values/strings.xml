@@ -44,4 +44,7 @@
     <string name="reversal_defect">Reversal Defect</string>
     <string name="ecg_report">ECG Report</string>
     <string name="enter_max_heart_rate">Enter Max Heart Rate</string>
+    <string name="brain">Brain</string>
+    <string name="prediction">prediction</string>
+    <string name="run_diagnosis">Run Diagnosis</string>
 </resources>
