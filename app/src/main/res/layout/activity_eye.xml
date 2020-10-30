@@ -19,6 +19,11 @@
             app:title="Cataract Diagnostic Centre"
             app:titleTextColor="@android:color/white"
             android:textAlignment="center"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
