@@ -47,4 +47,6 @@
     <string name="brain">Brain</string>
     <string name="prediction">prediction</string>
     <string name="run_diagnosis">Run Diagnosis</string>
+    <string name="give_end_to_end_cropped_image_only">Give end to end cropped image only</string>
+    <string name="run_diagnosis1">Run Diagnosis</string>
 </resources>

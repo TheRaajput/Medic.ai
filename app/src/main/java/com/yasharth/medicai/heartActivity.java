@@ -149,7 +149,7 @@ public class heartActivity extends AppCompatActivity {
     }
     ObjectAnimator objAnim;
     private void pulseAnimation(TextView obj){
-        objAnim= ObjectAnimator.ofPropertyValuesHolder(obj, PropertyValuesHolder.ofFloat("scaleX", 1.2f), PropertyValuesHolder.ofFloat("scaleY", 1.2f));
+        objAnim= ObjectAnimator.ofPropertyValuesHolder(obj, PropertyValuesHolder.ofFloat("scaleX", 1.1f), PropertyValuesHolder.ofFloat("scaleY", 1.1f));
         objAnim.setDuration(300);
         objAnim.setRepeatCount(ObjectAnimator.INFINITE);
         objAnim.setRepeatMode(ObjectAnimator.REVERSE);

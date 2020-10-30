@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         CardView heartCard = findViewById(R.id.heartDiag);
         CardView lungCard = findViewById(R.id.lungDiag);
-//        CardView eyeCard = findViewById(R.id.eyeDiag);
+        CardView eyeCard = findViewById(R.id.eyeDiag);
         final CardView brainActivity = findViewById(R.id.brainDiagnosis);
 
         heartCard.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent toBrain = new Intent(MainActivity.this,brainActivity.class);
                 startActivity(toBrain);
+            }
+        });
+        eyeCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toEye = new Intent(MainActivity.this,eyeActivity.class);
+                startActivity(toEye);
             }
         });
     }
